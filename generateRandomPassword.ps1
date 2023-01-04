@@ -1,18 +1,35 @@
-﻿ $number = 1..90 | Get-Random
+#####################################################################################################################################################
+# Synopsis             : The purpose of this Script is to Generate a combination of Random charachters which could be served as a password tobe onboarded to CyberArk    
+# Author               : Robert Paul
+# Email ID             : robart.paul@yahoo.co.in
+# Date Created         : 04th Jan 2023
+# last Updated         : none
+# Copyright reserved To: Robert Paul
+
+
+
+
+# :: Variables : Do not require User's input
+# Enhacement : none
+#
+#
+#######################################################################################################################################################
+
+ $number = 1..90 | Get-Random
  [string]$number = $number
  
- $alpa = "a","b","c","d" | Get-Random
+ $alpa = [char[]]([char]'a'..[char]'z') | Get-Random
 
  $specialchar = "!","@","#","%","^","&" | Get-Random
 
  $number1 = 1..90 | Get-Random
  [string]$number1 = $number1
 
- $alpaCAPS = "A","Z","T","I","H" | Get-Random
+ $alpaCAPS = [char[]]([char]'A'..[char]'Z') | Get-Random
   
  $specialchar2 = "!","@","#","%","^","&" | Get-Random
 
- $alpa2 = "a","b","c","d" | Get-Random
+ $alpa2 = [char[]]([char]'a'..[char]'z') | Get-Random
 
  $specialchar3 = "!","@","#","%","^","&" | Get-Random
 
